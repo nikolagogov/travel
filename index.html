@@ -5,107 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бюджетен Справочник за Пътуване | Къде Какво Има</title>
     <style>
-        :root {
-            --primary: #2c3e50;
-            --accent: #16a085;
-            --bg: #f8f9fa;
-            --text: #333;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg);
-            color: var(--text);
-        }
-        header {
-            background: linear-gradient(135deg, var(--primary), #34495e);
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-        }
+        :root { --primary: #2c3e50; --accent: #16a085; --bg: #f8f9fa; --text: #333; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: var(--bg); color: var(--text); }
+        header { background: linear-gradient(135deg, var(--primary), #34495e); color: #fff; padding: 60px 20px; text-align: center; }
         header h1 { margin: 0; font-size: 2.5rem; }
         header p { margin: 10px 0 0; opacity: 0.9; font-size: 1.1rem; }
-        
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 30px;
-            color: var(--primary);
-            position: relative;
-        }
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: var(--accent);
-            margin: 10px auto 0;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-        
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-        }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .section-title { text-align: center; margin-bottom: 30px; color: var(--primary); position: relative; }
+        .section-title::after { content: ''; display: block; width: 50px; height: 3px; background: var(--accent); margin: 10px auto 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s; }
         .card:hover { transform: translateY(-5px); }
         .card-content { padding: 20px; }
-        .card-tag {
-            background: var(--accent);
-            color: #fff;
-            padding: 3px 8px;
-            font-size: 0.8rem;
-            border-radius: 4px;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
+        .card-tag { background: var(--accent); color: #fff; padding: 3px 8px; font-size: 0.8rem; border-radius: 4px; display: inline-block; margin-bottom: 10px; }
         .card h3 { margin: 0 0 10px 0; color: var(--primary); }
         .card p { margin: 0 0 20px 0; font-size: 0.95rem; color: #666; }
-        
-        .btn {
-            display: inline-block;
-            background: var(--primary);
-            color: #fff;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            transition: background 0.2s;
-        }
+        .btn { display: inline-block; background: var(--primary); color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 4px; font-size: 0.9rem; transition: background 0.2s; }
         .btn:hover { background: var(--accent); }
-
-        .affiliate-box {
-            background: #eef2f3;
-            border-left: 4px solid var(--accent);
-            padding: 20px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 4px;
-            text-align: center;
-        }
-
-        footer {
-            background: var(--primary);
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 60px;
-            font-size: 0.9rem;
-        }
+        .affiliate-box { background: #eef2f3; border-left: 4px solid var(--accent); padding: 20px; border-radius: 0 8px 8px 0; margin-top: 4px; text-align: center; }
+        footer { background: var(--primary); color: #fff; text-align: center; padding: 20px; margin-top: 60px; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -127,17 +45,17 @@
                     <a href="#" class="btn">Виж маршрута</a>
                 </div>
             </div>
-            <!-- Тук автоматично ще добавяме още карти за България -->
         </div>
 
         <h2 class="section-title">🇪🇺 Балканите & Европа (Пътуване на тънко)</h2>
         <div class="grid">
             <div class="card">
                 <div class="card-content">
-                    <span class="card-tag">Европа</span>
-                    <h3>3 дни в Бергамо и Милано с нисък бюджет</h3>
-                    <p>Как да вземете евтин автобус от летището, къде да спите извън скъпите зони и кои забележителности са напълно безплатни.</p>
-                    <a href="#" class="btn">Прочети наръчника</a>
+                    <span class="card-tag">Балкани</span>
+                    <h3>Ниш за уикенда с минимален бюджет</h3>
+                    <p>Какво има на мястото, как да стигнете евтино с кола и къде да намерите частни стаи за по 25-35 лв. на нощ.</p>
+                    <!-- ВАЖНО: Този линк вече сочи към файла nish.html -->
+                    <a href="nish.html" class="btn">Прочети наръчника</a>
                 </div>
             </div>
         </div>
@@ -154,7 +72,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Бюджетен Справочник. Всички права запазени. Сайтът печели от афилиейт линкове без оскъпяване за вас.</p>
+        <p>&copy; 2026 Бюджетен Справочник. Сайтът печели от афилиейт линкове без оскъпяване за вас.</p>
     </footer>
 
 </body>
